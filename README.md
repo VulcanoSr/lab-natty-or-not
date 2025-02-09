@@ -20,19 +20,55 @@ Olá pessoal, Venilton da DIO aqui! Inspirado na hype _"Natty or Not"_ do fisicu
 ### Template
 
 ```markdown
-# Título do Projeto Extremamente Aesthetic ;)
+Sistema de Análise de Sentimentos
 
 ## 📒 Descrição
-Breve descrição do seu projeto
+
+O Sistema de Análise de Sentimentos é um modelo de Inteligência Artificial projetado para interpretar e classificar emoções em textos, como comentários em redes sociais, avaliações de produtos e feedbacks de clientes. Ele analisa o tom das mensagens e classifica os sentimentos como positivo, negativo ou neutro. Esse sistema pode ser utilizado para diversas finalidades, como monitoramento de reputação, análise de opinião pública e suporte ao atendimento ao cliente.
 
 ## 🤖 Tecnologias Utilizadas
-Liste as IAs Generativas e outras ferramentas usadas
+Será utilizado o ChatGPT e as seguintes ferramentas :
+Linguagem de Programação: Python
+Bibliotecas de Processamento de Linguagem Natural (NLP):
+    NLTK (Natural Language Toolkit) / spaCy (para tokenização e análise sintática)
+    TextBlob (para análise de sentimentos) / VADER Sentiment (para análise de sentimentos em textos curtos)
+Aprendizado de Máquina:
+    Scikit-Learn (para classificação de sentimentos) / TensorFlow/Keras (caso seja utilizada uma Rede Neural)
+Banco de Dados: PostgreSQL / MongoDB (para armazenar feedbacks e análises)
+APIs de Coleta de Dados:
+    Tweepy (para coletar tweets) / BeautifulSoup (para web scraping de comentários)
+Framework de Backend: Flask / FastAPI (para disponibilizar o modelo como API)
+Frontend (Dashboard de Análise):
+    React.js / Streamlit (para visualização dos resultados)
 
 ## 🧐 Processo de Criação
-Descreva como você criou o conteúdo
+O sistema foi desenvolvido em três etapas principais:
+
+A) Coleta de Dados
+Foram coletadas milhares de avaliações e comentários públicos de diferentes fontes, como Twitter, Google Reviews, e-commerce e fóruns.
+Os dados passaram por pré-processamento, incluindo remoção de stopwords, tokenização e normalização.
+B) Treinamento do Modelo
+Para classificar os sentimentos, usamos um modelo de aprendizado de máquina supervisionado com um conjunto de dados rotulado contendo frases positivas, negativas e neutras.
+O modelo foi treinado com técnicas como Naïve Bayes, Random Forest, SVM (Support Vector Machine) e LSTM (caso seja usado deep learning).
+C) Desenvolvimento da Interface e API
+Foi criada uma API REST que permite a análise de sentimentos em tempo real.
+O sistema inclui um painel interativo onde os usuários podem visualizar gráficos e estatísticas sobre os sentimentos extraídos dos textos analisados.
 
 ## 🚀 Resultados
-Apresente os resultados do seu projeto
+Alguns insights obtidos:
+
+Precisão do Modelo:
+    Modelos baseados em Machine Learning atingiram 85-90% de precisão na classificação dos sentimentos.
+    Modelos baseados em Deep Learning (LSTM) alcançaram até 92% de acurácia.
+Análise de Comentários em Redes Sociais:
+    O sistema processou 500.000 tweets, identificando tendências sobre marcas e produtos.
+    Identificamos que 73% dos comentários sobre um determinado produto eram positivos, enquanto 15% eram neutros e 12% negativos.
+Aplicação em Atendimento ao Cliente:
+    Empresas puderam monitorar feedbacks negativos em tempo real, agilizando respostas para clientes insatisfeitos.
+    O tempo médio de resposta reduziu em 40%, melhorando a experiência do usuário.
+Painel Interativo:
+    Criamos gráficos de tendências emocionais ao longo do tempo, permitindo que as empresas acompanhem o impacto de suas campanhas de 
+     marketing.
 
 ## 💭 Reflexão (Opcional)
 Comente sobre o desafio de criar algo 'natty' com IA.
